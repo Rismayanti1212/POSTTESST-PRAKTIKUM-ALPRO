@@ -8,13 +8,14 @@ Created on Sat Oct 23 23:10:55 2021
 pilihan = "ya"
 while pilihan == "ya":
     print("""
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-><><><><><><>      KONVERSI SUHU      <><><><><><><
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                     KONVERSI SUHU      
+___________________________________________________            
+         
               a. Fahrenheit ke Celius
               b. Kelvin ke Celcius
               c. Reamur ke Celcius
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+___________________________________________________
     """)
     pilih = str(input("Pilih Konversi suhu? (Misal : a, b, dan c) : "))
     if pilih == "a" :
@@ -34,14 +35,15 @@ while pilihan == "ya":
         konversi_suhu = "°C"
     else :
         print("Inputan tidak sesuai!!")
-    print("=-=-=-=-=-=-=-= Konversi suhu", jenis_suhu, "ke", konversi_suhu, "=-=-=-=-=-=-=-=")
+    print()
+    print("_ _ _ _ _ _ _ _ Konversi suhu", jenis_suhu, "ke", konversi_suhu, "_ _ _ _ _ _ _ ")
+    print()
     print(suhu, jenis_suhu, "=" , float(hasil), konversi_suhu)
-    print ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+    print("___________________________________________________")
     pilihan = input("Apakah ingin menghitung ulang? ya atau tidak : ")
-print ("Terima Kasih")
-#math.ceil(value)
-#math.floor(value)
-#import math
+print ("___________________________________________________")
+print ()
+print ("           Terima Kasih Telah Mengkonversi!!            ")
 
 
     
