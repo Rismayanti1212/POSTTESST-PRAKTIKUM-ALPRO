@@ -2,7 +2,7 @@ pilihan = "ya"
 while pilihan == "ya" :
     print("""
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-                        DATA MAHASISWA    
+                    DATA MAHASISWA    
 ___________________________________________________   
         """)
     print ("           Silahkan Input Data Anda!             ")
@@ -32,7 +32,7 @@ ___________________________________________________
     semester = int(input("Semester Berapa Anda Sekarang : "))
     ip = float(input("Isi Indeks Prestasi Anda : "))
     print ("___________________________________________________")
-    print ("               Berikut Data Anda                   ")
+    print ("                    Data Anda                      ")
     print ("___________________________________________________")
     
     data_mahasiswa = [nama, nim, (daftar_prodi[prodi]), semester, ip]
