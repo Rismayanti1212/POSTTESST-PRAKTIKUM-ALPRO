@@ -1,42 +1,35 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Oct 23 23:10:55 2021
-
-@author: Chimaa
-"""
-
 pilihan = "ya"
 while pilihan == "ya":
     print("""
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-                     KONVERSI SUHU      
+                    KONVERSI SUHU      
 ___________________________________________________            
          
-              a. Fahrenheit ke Celius
-              b. Kelvin ke Celcius
-              c. Reamur ke Celcius
+              1. Fahrenheit ke Celsius
+              2. Kelvin ke Celsius
+              3. Reamur ke Celsius
 ___________________________________________________
     """)
-    pilih = str(input("Pilih Konversi suhu? (Misal : a, b, dan c) : "))
-    if pilih == "a" :
-        suhu = int(input("Masukkan suhu Fahrenheit : "))
+    pilih = str(input("Pilih Konversi Suhu? (Misal : 1, 2, dan 3) : "))
+    if pilih == "1" :
+        suhu = int(input("Masukkan Suhu Fahrenheit : "))
         hasil =((suhu - 32) * 5 / 9)
         jenis_suhu = "F"
         konversi_suhu = "°C"    
-    elif pilih == "b" :
-        suhu = int(input("Masukkan suhu Kelvin : "))
-        hasil = (suhu - 273)
+    elif pilih == "2" :
+        suhu = int(input("Masukkan Suhu Kelvin : "))
+        hasil = (suhu - 273.15)        
         jenis_suhu = "K"
         konversi_suhu = "°C"
-    elif pilih == "c" :
-        suhu = int(input("Masukkan suhu Reamur : "))
+    elif pilih == "3" :
+        suhu = int(input("Masukkan Suhu Reamur : "))
         hasil = ((5 / 4 * suhu))
         jenis_suhu = "R"
         konversi_suhu = "°C"
     else :
-        print("Inputan tidak sesuai!!")
+        print("Inputan Anda Tidak Tersedia!")
     print()
-    print("_ _ _ _ _ _ _ _ Konversi suhu", jenis_suhu, "ke", konversi_suhu, "_ _ _ _ _ _ _ ")
+    print("_ _ _ _ _ _ _ _ Konversi Suhu", jenis_suhu, "ke", konversi_suhu, "_ _ _ _ _ _ _ ")
     print()
     print(suhu, jenis_suhu, "=" , float(hasil), konversi_suhu)
     print("___________________________________________________")
@@ -44,8 +37,3 @@ ___________________________________________________
 print ("___________________________________________________")
 print ()
 print ("           Terima Kasih Telah Mengkonversi!!            ")
-
-
-    
-        
-        
